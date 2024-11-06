@@ -1,0 +1,57 @@
+/* .slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slider-container img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+   */
+
+   .slider-container {
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 2px;
+  }
+  
+  .dot {
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 50%;
+    width: 2px;
+    height: 2px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s;
+    /* display: inline-block; */
+  }
+  
+  .dot.active {
+    background: white;
+  }
