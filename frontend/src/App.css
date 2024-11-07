@@ -9,3 +9,9 @@
 .App {
   text-align: center;
 }
+
+.FLEX {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
