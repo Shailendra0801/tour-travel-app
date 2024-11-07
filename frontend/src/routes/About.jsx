@@ -1,4 +1,4 @@
-import Hero from "../components/Hero";
+import Hero from "../components/Hero/Hero";
 import Navbar from "../components/sections/Navbar";
 import AboutImg from "../assets/night.jpg";
 import Footer from "../components/sections/Footer";

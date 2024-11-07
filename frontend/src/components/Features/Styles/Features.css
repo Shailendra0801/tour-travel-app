@@ -1,0 +1,20 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Container Styles */
+  .container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1170px;
+  }
+  
+  /* Features Section Styles */
+  .features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 30px;
+  }

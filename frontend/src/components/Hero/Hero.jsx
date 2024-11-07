@@ -1,11 +1,9 @@
-import "./Hero.css";
-import Navbar from "./sections/Navbar";
+import "./Styles/Hero.css";
 
 function Hero(props) {
   return (
     <>
       <div className={props.cName}>
-        <Navbar />
         <img alt="Hero" src={props.heroImg} />
 
         <div className="hero-text">
