@@ -13,6 +13,7 @@ const Destination = () => {
       
       <DestinationData
         className="first-des"
+        name="nainital"
         heading="Taal Volcano, Batangas"
         text="One of the most iconic views in Luzon, Mt. Taal boasts a volcano
         inside a lake inside an island. If you fancy a closer look, the hike up to
@@ -23,11 +24,12 @@ const Destination = () => {
         back home." 
         img1={Mountain1}
         img2={Mountain2}
-         />
+        />
 
       <DestinationData
        className="first-des-reverse"
-        heading="Mt. Daguldul, Batangas"
+       heading="Mt. Daguldul, Batangas"
+       name="himalaya"
         text="If you're looking for a hike that's a little more
         challenging but still good for a beginner mountaineer, check out Mt. Doguldul in San Jaun, Batangas.
          You'll start your hike from the beach and pass through tropical forest, different rock
