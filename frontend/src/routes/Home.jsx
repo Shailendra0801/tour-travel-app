@@ -10,6 +10,7 @@ import img1 from '../assets/1.jpg';
 import img2 from '../assets/2.jpg';
 import img3 from '../assets/4.jpg';
 
+import Img from '../assets/Hero.jpeg'
 
 function Home() {
 
@@ -25,7 +26,7 @@ function Home() {
        <Navbar />
        <Hero 
        cName="hero" 
-       heroImg="https://media.istockphoto.com/id/177337487/photo/plane.jpg?s=612x612&w=0&k=20&c=q7ir3NaxrRSHrzfgQ7CM34ghShHA8PpQNC4Z4D6BNyI="
+       heroImg={Img}
        title="Your Journey Your Story"
        text="Choose Your Favourite Destination" 
        buttonText="Get Started"

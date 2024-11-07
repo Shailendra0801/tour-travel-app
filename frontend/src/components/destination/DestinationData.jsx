@@ -1,23 +1,21 @@
-import { Component } from "react";
+import React from "react";
 import "./Destination.css";
+import { Link } from "react-router-dom";
 
-
-class DestinationData extends Component {
-  render() {
-    return (
-      <div className={this.props.className}>
+const DestinationData = (props) => {
+  return (
+    <div className={props.className}>
       <div className="des-text">
-        <h2>{this.props.heading}</h2>
-        <p>{this.props.text}</p>
+        <h2>{props.heading}</h2>
+        <p>{props.text}</p>
       </div>
 
-      <div className="image">
-        <img alt="img"  src={this.props.img1} />
-        <img alt="img"  src={this.props.img2} />
-      </div>
+      <Link className="image" to={`/details/${props.name}`}>
+        <img alt="img" src={props.img1} />
+        <img alt="img" src={props.img2} />
+      </Link>
     </div>
-    );
-  }
-}
+  );
+};
 
 export default DestinationData;

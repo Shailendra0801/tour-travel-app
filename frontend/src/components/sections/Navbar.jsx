@@ -1,37 +1,36 @@
-import { Component } from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { MenuItems } from "../MenuItems";
 import { Link } from "react-router-dom";
 
-class Navbar extends Component {
-  state = {clicked: false}
-  
-  handleClick = () => {
-    this.setState({clicked: !this.state.clicked})
-  }
+const Navbar = () => {
+  const [clicked, setClicked] = useState(false);
 
-  render() {
-    return (
-      <nav className="NavbarItems">
-        <h1 className="navbar-logo">Trippy</h1>
-        
-        <div className="menu-icons" onClick={this.handleClick}>
-            <i className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
-        </div>
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
 
-        <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
-          {MenuItems.map((item,index) => {
-            return (
-              <li key={index}>
-            <Link to={item.url} className={item.cName}><i className={item.icon}></i>{item.title}</Link>
-              </li>
-            )
-          })}
-          <button>Sign In</button>
-        </ul>
-      </nav>
-    );
-  }
-}
+  return (
+    <nav className="NavbarItems">
+      <h1 className="navbar-logo">Trippy</h1>
+
+      <div className="menu-icons" onClick={handleClick}>
+        <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
+      </div>
+
+      <ul className={clicked ? "nav-menu active" : "nav-menu"}>
+        {MenuItems.map((item, index) => (
+          <li key={index}>
+            <Link to={item.url} className={item.cName}>
+              <i className={item.icon}></i>
+              {item.title}
+            </Link>
+          </li>
+        ))}
+        <button>Sign Up</button>
+      </ul>
+    </nav>
+  );
+};
 
 export default Navbar;
