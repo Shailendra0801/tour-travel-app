@@ -1,5 +1,5 @@
 import React from "react";
-import "./TourDetail.css"; // Define your styles in this CSS file
+// import "./TourDetail.css"; // Define your styles in this CSS file
 
 const TourDetail = ({ title, locations, prices, imageUrl, description }) => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import getTourDetails from '../components/Constent';
+import getTourDetails from '../components/Constant';
 import TourDetail from '../components/destination/TourDetail';
 
 export default function Details() {

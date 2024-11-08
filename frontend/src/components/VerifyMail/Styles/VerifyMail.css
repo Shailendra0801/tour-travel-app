@@ -1,0 +1,57 @@
+/* VerifyMail.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.verifyMail-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.success {
+    color: #4CAF50; /* Green for success */
+    background-color: #e8f5e9; /* Light green background */
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+    border: 1px solid #4CAF50; /* Green border */
+}
+
+.error {
+    color: #f44336; /* Red for error */
+    background-color: #ffebee; /* Light red background */
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+    border: 1px solid #f44336; /* Red border */
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .verifyMail-container {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .success-message, .error-message {
+        font-size: 0.9em;
+    }
+}
