@@ -113,6 +113,9 @@ const SignUp = () => {
                 {message && <p className="success">{message}</p>}
                 {error && <p className="error">{error}</p>}
             </form>
+            <div className="sign-in-prompt">
+                <p>Already a user? <a href="/signin">Sign In</a></p> {/* Link to Sign In page, still to be created */}
+            </div>
         </div>
     );
 }

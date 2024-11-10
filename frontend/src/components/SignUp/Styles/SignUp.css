@@ -74,3 +74,24 @@ button:hover {
     text-align: center;
     margin-top: 10px;
 }
+
+
+.sign-in-prompt {
+    margin-top: 20px; /* Space above the prompt */
+    text-align: center; /* Center the text */
+    font-size: 14px; /* Font size for the prompt */
+}
+
+.sign-in-prompt p {
+    margin: 0; /* Remove default margin */
+    color: #555; /* Text color */
+}
+
+.sign-in-prompt a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.sign-in-prompt a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

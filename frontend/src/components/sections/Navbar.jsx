@@ -27,7 +27,7 @@ const Navbar = () => {
             </Link>
           </li>
         ))}
-        <button>Sign Up</button>
+        <button style={{ backgroundColor: 'blue', color: 'white' }}>Sign Up</button>
       </ul>
     </nav>
   );
