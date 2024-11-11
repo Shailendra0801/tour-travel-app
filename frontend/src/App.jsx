@@ -5,8 +5,8 @@ import About from "./routes/About";
 import Service from "./routes/Service";
 import Contact from "./routes/Contact";
 import Details from "./routes/Details";
-import SignUp from "./components/SignUp/SignUp";
-import VerifyMail from "./components/VerifyMail/VerifyMail";
+import SignUp from "./components/auth/SignUp";
+import LogIn from "./components/auth/LogIn";
 
 export default function App() {
   return (
@@ -17,8 +17,8 @@ export default function App() {
         <Route path="/service" element={<Service />}/>
         <Route path="/contact" element={<Contact />}/>
         <Route path="/details/:title" element={<Details />}/>
-        <Route path="/sign-up" element={<SignUp />}/>
-        <Route path="/verify-mail" element={<VerifyMail />} />
+        <Route path="/signup" element={<SignUp />}/>
+        <Route path="/login" element={<LogIn />}/>
       </Routes>
     </div>
   );

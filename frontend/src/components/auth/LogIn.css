@@ -8,8 +8,7 @@ body {
 }
 
 .sign-in-container {
-    max-width: 400px;
-    margin: 100px auto;
+    width: 30vw;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 8px;
@@ -19,10 +18,6 @@ body {
 h2 {
     text-align: center;
     color: #333;
-}
-
-.form-group {
-    margin-bottom: 15px;
 }
 
 label {
