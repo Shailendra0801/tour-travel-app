@@ -1,5 +1,4 @@
 import React from "react";
-// import "./TourDetail.css"; // Define your styles in this CSS file
 
 const TourDetail = ({ title, locations, prices, imageUrl, description }) => {
   return (
@@ -13,7 +12,7 @@ const TourDetail = ({ title, locations, prices, imageUrl, description }) => {
       </div>
 
       <div className="tour-details">
-        <div className="tour-info w-11/12">
+        <div className="tour-info w-11/12">s
           <h2 className="text-lg font-bold">Locations to Visit:</h2>
           <div>
             {locations.map((location, index) => (
@@ -32,7 +31,7 @@ const TourDetail = ({ title, locations, prices, imageUrl, description }) => {
           </ul>
         </div>
       </div>
-
+    
     </div>
   );
 };

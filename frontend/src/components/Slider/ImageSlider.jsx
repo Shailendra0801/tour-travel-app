@@ -26,11 +26,11 @@ const ImageSlider = ({ images, interval = 6000 }) => {
   }
 
   return (
-    <div className="slider-container" style={{ position: 'relative', width: '100%', margin: '0' }}>
+    <div className="relative w-full">
       <img
         src={images[currentIndex]}
         alt={`Slide ${currentIndex + 1} of ${images.length}`}
-        style={{ width: '97%', height: 'auto', borderRadius: '10px', margin: '0 auto' }}
+        style={{ width: '97%', height: 'auto', borderRadius: '10px', margin: '0 auto', objectFit: 'cover' }}  
       />
       <div className="dots-container">
         {images.map((_, index) => (
