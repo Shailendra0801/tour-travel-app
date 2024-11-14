@@ -1,18 +1,27 @@
+const paymentRoute = require("./routes/payment");
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors');
+
+const admin = require("firebase-admin");
 
 const morgan = require('morgan'); //for logging HTTPS req in development
 const helmet = require('helmet'); //to set various HTTP headers for security
 const rateLimit = require('express-rate-limit');  //to limit reqs from same IP
 
 
+admin.initializeApp();
+const db = admin.firestore();
+
 
 dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors());
+
+// Payment route
+app.use("/api/payment", paymentRoute);
 
 mongoose.connect(process.env.MONGO_URI, {useNewUrlparse: true, useUnifiedTopology: true})
     .then(() => console.log("MongoDB connected"))
