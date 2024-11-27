@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const TourDetail = ({ title, locations, prices, imageUrl, description }) => {
+const TourDetail = ({ title, heading, locations, prices, imageUrl, description }) => {
+ 
   return (
     <div className="tourContainer w-screen p-5 FLEX flex-col">
-      <h1 className="text-xl font-bold">{title}</h1>
+      <h1 className="text-xl font-bold">{heading}</h1>
       <section className="m-8">
         {description}
       </section>
@@ -30,6 +32,11 @@ const TourDetail = ({ title, locations, prices, imageUrl, description }) => {
 
           </ul>
         </div>
+        <Link 
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          to={`/booking/${title}`}>
+          Book Tour
+        </Link>
       </div>
     
     </div>

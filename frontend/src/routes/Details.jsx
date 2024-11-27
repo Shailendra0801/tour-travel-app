@@ -4,15 +4,17 @@ import getTourDetails from '../components/Constant';
 import TourDetail from '../components/destination/TourDetail';
 
 export default function Details() {
-    const {title} = useParams();
-    const info = getTourDetails(title);
-    console.log(info);
+  const {title} = useParams();
+  const info = getTourDetails(title);
+  // console.log(info);
+
   return (
     <TourDetail 
-    description={info.description}
-        title={info.heading} 
-        locations={info.locations} 
-        prices={info.prices} imageUrl={info.image}
+      description={info.description}
+      heading={info.heading} 
+      title={info.title} 
+      locations={info.locations} 
+      prices={info.prices} imageUrl={info.image}
     />
   )
 }
