@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { MenuItems } from "../MenuItems";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
+import logo from "./logo-png.png";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
@@ -16,7 +17,8 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md">
       <div className="container mx-auto px-4 flex justify-between items-center py-4">
-        <h1 className="text-2xl font-bold text-blue-600">Trippy</h1>
+        {/* <h1 className="text-2xl font-bold text-blue-600">Trippy</h1> */}
+        <img className="log" src={logo} alt="Logo" />
 
         <div className="md:hidden" onClick={handleClick}>
           <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>

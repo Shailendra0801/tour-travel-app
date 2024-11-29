@@ -16,6 +16,11 @@
     backdrop-filter: blur(10px); /* Blur effect */
 }
 
+.log {
+    max-width: 5vh;
+    max-height: 15px;
+}
+
 .navbar-logo {
     color: #222;
     font-size: 2rem;
