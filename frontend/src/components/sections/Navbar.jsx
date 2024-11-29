@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { MenuItems } from "../MenuItems";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
+import logo from "./logo-png.png";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
@@ -16,6 +17,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md NavbarItems">
       <div className="container mx-auto px-4 flex justify-between items-center py-4">
+
         <img src="/image/logo.jpeg" alt=""  className="size-20"/>
         
         <div className="md:hidden" onClick={handleClick}>

@@ -1,30 +1,12 @@
 .footer {
-  padding: 4rem 6rem;
+  height: auto;
+  padding: 2rem 1rem; /* Adjusted for mobile */
   background: #000;
   color: #fff;
 }
 
-.top {
-  display: flex;
-  align-items: center;
-  text-align: start;
-  justify-content: space-between;
-  flex-wrap: wrap;  
-}
-
-.top i {
-  color: #fff;
-  font-size: 2rem;
-  margin-left: 1rem;
-}
-
-.top i:hover {
-  color: #01959a;
-}
-
 .bottom {
   padding-top: 2rem;
-  text-align: start;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -33,11 +15,12 @@
 .bottom div {
   display: flex;
   flex-direction: column;
+  width: 20%; /* Set width for consistent layout */
 }
 
 .bottom h4 {
   font-size: 1.3rem;
-  padding: 1rem 0 .8rem 0;
+  margin: 1rem 0 0.8rem; /* Margin for spacing */
 }
 
 .bottom a {
@@ -45,19 +28,21 @@
   color: #fafafa;
   padding-bottom: 0.4rem;
   font-size: 1.1rem;
+  transition: color 0.3s; /* Smooth color transition */
 }
 
+.bottom a:hover {
+  color: #01959a; /* Change color on hover for links */
+}
 
+/* Responsive Design */
 @media screen and (max-width: 850px) {
   .footer {
-    padding: 4rem 2rem;
-  }
-
-  .footer i {
-    margin: 1rem 1rem 0 0;
+    padding: 2rem 1rem; /* Adjust padding for mobile */
   }
 
   .bottom div {
-    width: 50%;
+    width: 100%; /* Full width for mobile */
+    margin-bottom: 1rem; /* Spacing between sections */
   }
 }
