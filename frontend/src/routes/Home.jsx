@@ -6,12 +6,13 @@ import Trip from "../components/trip/Trip";
 import ImageSlider from "../components/Slider/ImageSlider";
 import Features from "../components/Features/Features";
 
+
 import img1 from '../assets/5.jpg';
 import img2 from '../assets/8.jpg';
 import img3 from '../assets/6.jpg';
 import img4 from '../assets/Hero.jpeg';
 
-import Img from '../assets/Hero.jpeg'
+import HomeImage from '../assets/Hero.jpeg'
 
 function Home() {
 
@@ -27,7 +28,7 @@ function Home() {
        <Navbar />
        <Hero 
        cName="hero" 
-       heroImg={Img}
+       heroImg={HomeImage}
       title="SunRaj Tour and Travels"
        text="EMBARK ON UNFORGETTABLE JOURNEYS" 
        buttonText="Get Started"
