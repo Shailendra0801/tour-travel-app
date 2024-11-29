@@ -6,10 +6,11 @@ import Trip from "../components/trip/Trip";
 import ImageSlider from "../components/Slider/ImageSlider";
 import Features from "../components/Features/Features";
 
-import img1 from '../assets/Nainadevi.jpeg';
-import img2 from '../assets/Chauli_ki_Jal.jpeg';
-import img3 from '../assets/khuruptal.jpeg';
-import Img4 from '../assets/topView.jpeg'
+
+import img1 from '../assets/5.jpg';
+import img2 from '../assets/8.jpg';
+import img3 from '../assets/6.jpg';
+import img4 from '../assets/Hero.jpeg';
 
 import HomeImage from '../assets/Hero.jpeg'
 
@@ -19,7 +20,7 @@ function Home() {
     img1,
     img2,
     img3,
-    img3
+    img4
   ];
 
   return (

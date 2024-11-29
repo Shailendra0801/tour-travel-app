@@ -2,10 +2,11 @@ import "./Styles/Features.css";
 import Card from "./Card/Card";
 import Header from "./Header/Header";
 
+
 function Features() {
     const cardsData = [
         {
-          icon: 'coffee.svg', // Replace icon
+          icon: '', // Replace icon
           title: 'Since 2004',
           description: 'With 20 years of experience, we offer tailored tours to explore the best tourist spots.',
         },
@@ -16,8 +17,8 @@ function Features() {
         },
         {
           icon: 'document.svg', 
-          title: 'Reformidans eis',
-          description: 'Facet patrio causae ei sed. Vix ex quidam detraxit, vis ad nostro laoreet.',
+          title: '40+ Must-Visit Tourist Spots',
+          description: 'Explore 40+ breathtaking tourist spots for unforgettable travel adventures.',
         },
       ];
 
