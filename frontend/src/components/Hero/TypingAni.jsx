@@ -12,7 +12,6 @@ const TypingEffect = () => {
         // Function to type each character
         const typeEffect = setInterval(() => {
             if (index < companyName.length) {
-                console.log(companyName[index]);
                 setText((prev) => prev + companyName[index]);
                 index++;
             } else {
