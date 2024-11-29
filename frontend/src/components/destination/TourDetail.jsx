@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./TourDetail.css";
 
 const TourDetail = ({ title, heading, locations, prices, imageUrl, description }) => {
  
@@ -14,7 +15,7 @@ const TourDetail = ({ title, heading, locations, prices, imageUrl, description }
       </div>
 
       <div className="tour-details">
-        <div className="tour-info w-11/12">s
+        <div className="tour-info w-11/12">
           <h2 className="text-lg font-bold">Locations to Visit:</h2>
           <div>
             {locations.map((location, index) => (
@@ -33,7 +34,7 @@ const TourDetail = ({ title, heading, locations, prices, imageUrl, description }
           </ul>
         </div>
         <Link 
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          className="bookButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           to={`/booking/${title}`}>
           Book Tour
         </Link>

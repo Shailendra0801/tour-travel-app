@@ -14,29 +14,28 @@ const Destination = () => {
       <DestinationData
         className="first-des"
         name="nainital"
-        heading="Taal Volcano, Batangas"
-        text="One of the most iconic views in Luzon, Mt. Taal boasts a volcano
-        inside a lake inside an island. If you fancy a closer look, the hike up to
-        the crater in a mere 45 minutes, and is easy enough for beginners. Guides
-        will assist you most of the way, and you'll see the peculiar environment found
-        on an active volcano, including volcano rocks and steam vents. The hike can be dusty
-        and hot, so plan for an early morning tip and then unwind with some bulalo before heading
-        back home." 
+        heading="Nainital"
+        text="Nainital, nestled in the Kumaon hills of Uttarakhand, is a charming hill station 
+        centered around the emerald Naini Lake. Surrounded by lush forests and snow-capped peaks, 
+        it offers breathtaking natural beauty and a tranquil atmosphere. Visitors can enjoy a serene 
+        boat ride on the lake, explore the vibrant Mall Road, or visit iconic spots like Naina Devi 
+        Temple, Snow View Point, and Tiffin Top. Known for its colonial charm and pleasant weather, 
+        Nainital is a favorite destination for families, honeymooners, and adventure seekers alike. 
+        Its rich cultural heritage, scenic vistas, and countless attractions make it a must-visit gem of the Himalayas." 
         img1={Mountain1}
         img2={Mountain2}
         />
 
       <DestinationData
        className="first-des-reverse"
-       heading="Mt. Daguldul, Batangas"
-       name="himalaya"
-        text="If you're looking for a hike that's a little more
-        challenging but still good for a beginner mountaineer, check out Mt. Doguldul in San Jaun, Batangas.
-         You'll start your hike from the beach and pass through tropical forest, different rock
-         informations and small streams. There's a smallstore halfway up the troll where you can take a
-         break and drink buko juice, and though the summit itself may not have and the best, the
-         breeze is fantastic. Once you've made it back down, head straight to the beach for a refreshing,
-         well deserved swim." 
+       heading="Mukteshwar"
+       name="mukteshwar"
+        text="Mukteshwar, a charming hill station located about 50 km from Nainital, offers breathtaking 
+        views of the snow-clad Himalayas and lush green valleys. Known for its tranquility, Mukteshwar is 
+        home to the famous Mukteshwar Dham Temple, perched atop a hill and steeped in history. Adventure 
+        enthusiasts can enjoy trekking, rock climbing, and rappelling, while nature lovers can revel in 
+        the serene beauty of dense forests and orchards. The sunrise and sunset here are particularly mesmerizing, 
+        making Mukteshwar a perfect blend of adventure, spirituality, and natural splendor​." 
         img1={Mountain3}
         img2={Mountain4}
          />

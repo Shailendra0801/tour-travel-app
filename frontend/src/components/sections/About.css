@@ -4,12 +4,14 @@
 }
 
 .about-container h1 {
+    font-weight: bold;
+    font-size: 2rem;
     padding-bottom: 1rem;
 }
 
 .about-container p {
     padding-bottom: 2rem;
-
+    font-size: 1.35rem;
 }
 
 @media screen and (max-width: 850px) {

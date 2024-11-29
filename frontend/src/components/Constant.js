@@ -1,10 +1,10 @@
 // Sample JSON data (assuming it's imported or defined in the same file)
 const toursData = {
 "tours": [
-    {
+  {
     "title": "nainital",
+    "description" : "Nainital is a beautiful hill station located in the Kumaon region of Uttarakhand, famous for its picturesque Naini Lake. Visitors can enjoy boating, take a walk along Mall Road, and visit prominent spots like the Naina Devi Temple, Snow View Point, and Tiffin Top, offering spectacular views of the surrounding hills. The town is also home to many charming cottages and hotels with scenic views.",
     "heading": "Nainital Darshan",
-    "description" : "Nainital is a Himalayan resort town in the Kumaon region of India’s Uttarakhand state, at an elevation of roughly 2,000m. Formerly a British hill station, it’s set around Nainital Lake, a popular boating site with Naina Devi Hindu Temple on its north shore. A cable car runs to Snow View observation point (at 2,270m), with vistas over the town and mountains including Nanda Devi,",
     "locations": [
         "Bara Pathar",
         "Lover's Point",
@@ -24,10 +24,10 @@ const toursData = {
     },
     "image" : 'nainital.jpg'
     
-},
-{
+  },
+  {
     "title": "himalaya",
-    "description" : "Nainital is a Himalayan resort town in the Kumaon region of India’s Uttarakhand state, at an elevation of roughly 2,000m. Formerly a British hill station, it’s set around Nainital Lake, a popular boating site with Naina Devi Hindu Temple on its north shore. A cable car runs to Snow View observation point (at 2,270m), with vistas over the town and mountains including Nanda Devi,",
+    "description" : "Situated about 8 km from Nainital, the Himalaya Darshan viewpoint offers panoramic views of the majestic Himalayan peaks. It is one of the most popular attractions in Nainital and a perfect spot for nature lovers. The view of the snow-clad peaks, surrounded by lush green hills and valleys, provides a serene and peaceful experience.",
     "heading": "Himalaya Darshan (2 Hours by Taxi)",
     "locations": [
         "Khurpatal View",
@@ -46,7 +46,8 @@ const toursData = {
     "image" : 'nainital.jpg'
     },
     {
-        "heading": "lake",
+        "title": "lake",
+        "description" : "Nainital and the surrounding areas are dotted with serene lakes, each offering unique experiences. For instance, Bhimtal, Sattal, and Naukuchia Tal are all famous for their tranquil settings and opportunities for boating and nature walks. Sattal, a group of seven interconnected lakes, is perfect for a day trip, while Bhimtal offers a large lake with an island in the middle​.",
         "heading": "Lake Tour (Half Day by Taxi)",
         "locations": [
           "Pines Salfi",
@@ -62,10 +63,12 @@ const toursData = {
           "Alto": "Rs 4500/-",
           "Eco": "Rs 5000/-",
           "Tavera": "Rs 6000/-"
-        }
+        },
+        "image" : 'nainital.jpg'
       },
       {
-        "heading": "mukteshwar",
+        "title": "mukteshwar",
+        "description" : "Mukteshwar, located about 51 km from Nainital, is a peaceful hill station known for its panoramic views of the Himalayas. Attractions include the Mukteshwar Mahadev Temple, a revered spot for pilgrims, the Gorakhal Temple, and scenic tea gardens. It’s an excellent destination for those seeking solitude and natural beauty.",
         "heading": "Mukteshwar (6-7 Hours by Taxi)",
         "locations": [
           "Pines Salfi",
@@ -83,10 +86,12 @@ const toursData = {
           "Alto": "Rs 4500/-",
           "Eco": "Rs 5000/-",
           "Tavera": "Rs 7000/-"
-        }
+        },
+        "image" : 'nainital.jpg'
       },
       {
         "title": "ranikhet",
+        "description" : "Ranikhet, about 60 km from Nainital, is a charming hill station known for its natural beauty and quiet ambiance. The town is home to attractions like the Jhula Devi Temple, Army Museum, Kalika Temple, and lush golf courses. It is an ideal place for a peaceful retreat amidst pine forests and snow-capped mountains.",
         "heading": "Ranikhet",
         "locations": [
           "Pines Salfi",
@@ -104,10 +109,14 @@ const toursData = {
           "Alto": "Rs 4500/-",
           "Eco": "Rs 5000/-",
           "Tavera": "Rs 7000/-"
-        }
+        },
+        "image" : 'nainital.jpg'
     }
-]
+
+  ]
 };
+  
+
 
 export default function getTourDetails(title) {
     return toursData.tours.find(tour => tour.title === title) || null;

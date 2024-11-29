@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './Styles/ImageSlider.css';
 
-const ImageSlider = ({ images, interval = 6000 }) => {
+const ImageSlider = ({ images, interval = 2000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

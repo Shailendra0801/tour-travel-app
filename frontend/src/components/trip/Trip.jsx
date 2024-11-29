@@ -12,22 +12,25 @@ function Trip() {
       <div className="tripcard">
         <TripData
           image={Trip1}
-          heading="Trip in Indonesia"
-          text="Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia
-          and Oceania between the Indian and Pacific oceans. It consists of over 17,000
-          islands, including Sumatra, Java, Sulawesi, and parts of Borneo and New Guinea."
+          heading="Barapatthar"
+          text="Barapatthar, just 2 km from Nainital, offers a serene retreat with lush surroundings 
+          and exciting horse riding trails. Perfect for nature lovers and adventure seekers, it serves 
+          as a gateway to panoramic views and tranquil trails leading to attractions like Tiffin Top. 
+          Ideal for a short, peaceful escape from the bustling town Nainital."
            />
 
         <TripData
           image={Trip2}
-          heading="Trip in Malaysia"
-          text="Malaysia is a Southeast Asian country occupying parts of Malay Peninsula and the island of Borneo. It's known for
-          its beaches, rainforests and mix of Malay. Chinese, Indian and European cultural influences." 
+          heading="Khurpa Tal"
+          text="Khurpa Tal, nestled about 11 km from Nainital, is a hidden gem known for its emerald-green 
+          waters surrounded by lush forests and terraced fields. A peaceful escape from the town's hustle, 
+          this picturesque lake is ideal for photography, nature walks, and picnics, offering an untouched 
+          and tranquil vibe for visitors." 
            />
 
         <TripData
           image={Trip3}
-          heading="Trip in France"
+          heading="AC Cave"
           text="France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches. 
           Paris, its fashion houses, classical art museums including the Louvre and monuments like the 
           Eiffel Tower."

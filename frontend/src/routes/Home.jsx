@@ -27,14 +27,14 @@ function Home() {
        <Hero 
        cName="hero" 
        heroImg={Img}
-       title="Your Journey Your Story"
-       text="Choose Your Favourite Destination" 
+      title="SunRaj Tour and Travels"
+       text="EMBARK ON UNFORGETTABLE JOURNEYS" 
        buttonText="Get Started"
        url="/"
-       btnClass="show" 
+       btnClass="hide" 
        />
        <Features />
-       <ImageSlider images={images} interval={6000} />
+       <ImageSlider images={images} interval={2000} />
        <Destination />
        <Trip />
        <Footer />

@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import getTourDetails from '../Constant';
 import { FeatureContext } from '../../context/feature';
+import "./booking.css";
 
 export default function Booking() {
     const { title } = useParams();
@@ -12,7 +13,7 @@ export default function Booking() {
     const [numMembers, setNumMembers] = useState('');
     const [name, setName] = useState('');
     const [paymentBy, setPaymentBy] = useState('');
-    const [planeType, setPlaneType] = useState(Object.keys(prices)[0]);
+    const [carType, setcarType] = useState(Object.keys(prices)[0]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -20,7 +21,7 @@ export default function Booking() {
         // Handle booking logic here
         await bookingTour({
             journeyDate,
-            planeType,
+            carType,
             numMembers,
             name,
             paymentBy,
@@ -33,8 +34,8 @@ export default function Booking() {
             <form onSubmit={handleSubmit}>
                 <FormField label="Name:" type="text" value={name} onChange={setName} required />
                 <FormField label="Journey Date:" type="date" value={journeyDate} onChange={setJourneyDate} required />
-                <FormField label="Type of Plane:" type="select" value={planeType} onChange={setPlaneType} options={Object.keys(prices)} required />
-                <label>Selected Price: {prices[planeType]}</label>
+                <FormField label="Car Type:" type="select" value={carType} onChange={setcarType} options={Object.keys(prices)} required />
+                <label>Selected Price: {prices[carType]}</label>
 
                 <FormField label="Number of Members:" type="number" value={numMembers} onChange={setNumMembers} required />
                 <FormField label="Payment By:" type="text" value={paymentBy} onChange={setPaymentBy} required />

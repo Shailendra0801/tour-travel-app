@@ -3,6 +3,7 @@ import Navbar from "../components/sections/Navbar";
 import AboutImg from "../assets/night.jpg";
 import Footer from "../components/sections/Footer";
 import Trip from "../components/trip/Trip";
+import DestinationService from "../components/destination/DestinationService";
 
 function Service() {
   return (
@@ -11,9 +12,10 @@ function Service() {
        <Hero 
         cName="hero-mid" 
         heroImg={AboutImg}
-        title="Service"
+        title="Tours"
         btnClass="hide" 
        />
+      <DestinationService />
       <Trip />
       <Footer />
     </>

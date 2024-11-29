@@ -1,4 +1,5 @@
 import "./Styles/Hero.css";
+import TypingEffect from "./TypingAni";
 
 function Hero(props) {
   return (
@@ -6,11 +7,13 @@ function Hero(props) {
       <div className={props.cName}>
         <img alt="Hero" src={props.heroImg} />
 
-        <div className="hero-text">
-          <h1>{props.title}</h1>
-          <p>{props.text}</p>
-          <a href={props.url} className={props.btnClass}>{props.buttonText}</a>
-        </div>
+        {/* <div className="card"> */}
+          <div className="hero-text">
+            {/* <TypingEffect /> */}
+            <h1 className="animated-text">{props.title}</h1>
+            <p className="animated-text">{props.text}</p>
+          </div>
+        {/* </div> */}
       </div>
     </>
   );

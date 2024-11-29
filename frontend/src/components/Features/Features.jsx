@@ -6,13 +6,13 @@ function Features() {
     const cardsData = [
         {
           icon: 'coffee.svg', // Replace icon
-          title: 'Pro ad constituto',
-          description: 'Ne usu illud albucius abhorreant, partiendo scriptorem mel ne.',
+          title: 'Since 2004',
+          description: 'With 20 years of experience, we offer tailored tours to explore the best tourist spots.',
         },
         {
           icon: 'calendar.svg', 
-          title: 'Eam commodo',
-          description: 'Fuisset intellegat delicatissimi ex mea. Cu probo integre ne.',
+          title: 'Trusted Journeys',
+          description: 'Your trusted tour and travel partner, offering unforgettable experiences to a growing, loyal clientele.',
         },
         {
           icon: 'document.svg', 
