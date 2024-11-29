@@ -6,9 +6,10 @@ import Trip from "../components/trip/Trip";
 import ImageSlider from "../components/Slider/ImageSlider";
 import Features from "../components/Features/Features";
 
-import img1 from '../assets/1.jpg';
-import img2 from '../assets/2.jpg';
-import img3 from '../assets/4.jpg';
+import img1 from '../assets/5.jpg';
+import img2 from '../assets/8.jpg';
+import img3 from '../assets/6.jpg';
+import img4 from '../assets/Hero.jpeg';
 
 import Img from '../assets/Hero.jpeg'
 
@@ -18,7 +19,7 @@ function Home() {
     img1,
     img2,
     img3,
-    img3
+    img4
   ];
 
   return (

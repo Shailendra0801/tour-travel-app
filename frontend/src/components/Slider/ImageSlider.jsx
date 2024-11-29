@@ -30,7 +30,7 @@ const ImageSlider = ({ images, interval = 2000 }) => {
       <img
         src={images[currentIndex]}
         alt={`Slide ${currentIndex + 1} of ${images.length}`}
-        style={{ width: '97%', height: 'auto', borderRadius: '10px', margin: '0 auto', objectFit: 'cover' }}  
+        style={{ width: '97%', height: '97vh', borderRadius: '10px', margin: '0 auto', objectFit: 'cover' }}  
       />
       <div className="dots-container">
         {images.map((_, index) => (
