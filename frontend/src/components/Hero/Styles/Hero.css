@@ -23,12 +23,12 @@ img {
 
 .hero-text {
     position: absolute;
-    /* z-index: 1; */
+    z-index: 1;
     top: 55%;
     left: 50%;
     width: fit-content;
-    /* filter: blur(10px); */
     transform: translate(-50%, -50%);
+    text-shadow: black ;
 }
 
 .hero-text h1 {
