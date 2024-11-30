@@ -33,20 +33,13 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.tour-details {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
 .tour-info,
 .tour-prices {
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    width: 48%;
+    width: 40%;
 }
 
 .tour-info h2,
