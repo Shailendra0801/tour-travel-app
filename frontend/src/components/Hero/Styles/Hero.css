@@ -35,13 +35,15 @@ img {
     font-size: 3rem;
     font-weight: 800;
     background: #fff;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .hero-text p {
     font-size: 1.3rem;
-    color: #fff;
+    color: white;
+    border: #222;
     padding: 0.5rem 0 2rem 0;
 }
 
@@ -81,7 +83,7 @@ img {
 }
 
 .animated-text {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;

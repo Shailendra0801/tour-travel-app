@@ -16,9 +16,9 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-md NavbarItems">
-      <div className="container mx-auto px-4 flex justify-between items-center py-4">
+      <div className="container px-4 flex justify-between items-center">
 
-        <img src="/image/logo.jpeg" alt=""  className="size-20"/>
+        <img src="/image/logoR.png" alt=""  className="size-20"/>
         
         <div className="md:hidden" onClick={handleClick}>
           <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>

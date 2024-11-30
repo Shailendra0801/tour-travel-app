@@ -14,7 +14,7 @@ const TourDetail = ({ title, heading, locations, prices, imageUrl, description }
         <img src={`/image/${imageUrl}`} alt="Tour" />
       </div>
 
-      <div className="tour-details">
+      <div className="tour-details mt-8">
         <div className="flex justify-evenly">
 
           <div className="tour-info w-11/12">
