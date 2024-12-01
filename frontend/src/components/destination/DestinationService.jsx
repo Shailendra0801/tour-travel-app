@@ -8,8 +8,8 @@ import Mountain4 from "../../assets/8.jpg";
 const DestinationService = () => {
   return (
     <div className="destination">
-        <h1>Tour Packages</h1>
-        <p>Tours give you the opportunity to see alot within a time frame</p>
+        <h1 className="font-bold text-2xl p-5">Tour Packages</h1>
+        <p className="text-lg">Tours give you the opportunity to see alot within a time frame</p>
       
         <DestinationData
             className="first-des"

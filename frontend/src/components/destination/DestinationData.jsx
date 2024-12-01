@@ -6,7 +6,7 @@ const DestinationData = (props) => {
   return (
     <div className={props.className} >
       <Link className="des-text" to={`/details/${props.name}`}>
-        <h2 className=" text-2xl font-bold">{props.heading}</h2>
+        <h1 className=" text-lg p-5 font-bold">{props.heading}</h1>
         <p>{props.text}</p>
       </Link>
 
