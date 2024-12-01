@@ -18,6 +18,12 @@ export const MenuItems = [
     icon : "fa-solid fa-briefcase"
   },
   {
+    title : "Terms & Conditions",
+    url : "/terms",
+    cName : "nav-links",
+    icon : "fa-solid fa-file"
+  },
+  {
     title : "Contact Us",
     url : "/contact",
     cName : "nav-links",

@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
         <div>
         <h4>Follow Us</h4>
-          <a href="" target="_blank">
+          <a href="https://wa.me/9012765558" target="_blank">
             <FontAwesomeIcon icon={faWhatsapp} /> Whatsapp
           </a>
           <a href="https://www.instagram.com" target="_blank">
