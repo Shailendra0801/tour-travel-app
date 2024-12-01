@@ -1,6 +1,7 @@
 import "./Footer.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faFacebook, faInstagram, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const contactInfo = {
@@ -38,9 +39,7 @@ const Footer = () => {
         </div>
         <div>
           <h4>Others</h4>
-          {otherLinks.map(({ href, text }, index) => (
-            <a key={index} href={href}>{text}</a>
-          ))}
+          <Link to='/terms'>Terms and Conditions</Link>
         </div>
       </div>
     </div>
