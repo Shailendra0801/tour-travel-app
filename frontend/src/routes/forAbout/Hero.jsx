@@ -1,9 +1,9 @@
-import "./Styles/Hero.css";
+import "./Hero.css";
 
 function Hero(props) {
   return (
     <div className={props.cName}>
-      <img className="yoo" alt="Hero" src={props.heroImg} />
+      <img className="mt-20" alt="Hero" src={props.heroImg} />
 
         <div className="hero-text">
           <h1 className="animated-text">{props.title}</h1>

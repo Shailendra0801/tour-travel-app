@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
-    width: 70%;
+    width: 55%;
     height: 10%;
     border-radius: 13px;
     position: fixed;
@@ -11,8 +11,8 @@
     left: 50%;
     transform: translate(-50%);
     z-index: 9999;
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
-    backdrop-filter: blur(10px); /* Blur effect */
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(2.5px); /* Blur effect */
 }
 
 .log {

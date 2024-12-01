@@ -4,17 +4,17 @@ import Card from "./Card/Card";
 function Features() {
   const cardsData = [
     {
-      icon: 'image/destinations.png', // Replace icon
+      icon: 'image/exp.png', // Replace icon
       title: 'Since 2004',
       description: 'With 20 years of experience, we offer tailored tours to explore the best tourist spots.',
     },
     {
-      icon: 'image/exp.png', // Replace icon
+      icon: 'image/trust.png', // Replace icon
       title: 'Trusted Journeys',
       description: 'Your trusted tour and travel partner, offering unforgettable experiences to a growing, loyal clientele.',
     },
     {
-      icon: 'image/trust.png', // Replace icon
+      icon: 'image/destinations.png', // Replace icon
       title: '40+ Must-Visit Tourist Spots',
       description: 'Explore 40+ breathtaking tourist spots for unforgettable travel adventures.',
     },

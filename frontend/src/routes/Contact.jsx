@@ -1,6 +1,6 @@
 import Hero from "../components/Hero/Hero";
 import Navbar from "../components/sections/Navbar";
-import AboutImg from "../assets/Hero.jpeg";
+import AboutImg from "../assets/topView.jpeg";
 import Footer from "../components/sections/Footer";
 import ContactForm from "../components/ContactUs/ContactForm";
 
@@ -11,7 +11,7 @@ function Contact() {
        <Hero 
        cName="hero-mid" 
        heroImg={AboutImg}
-       title="Contact Us"
+      //  title="Contact Us"
        btnClass="hide" 
        />
        <ContactForm />
