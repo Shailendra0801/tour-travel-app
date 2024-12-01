@@ -8,6 +8,7 @@ import Details from "./routes/Details";
 import SignUp from "./components/auth/SignUp";
 import LogIn from "./components/auth/LogIn";
 import Booking from "./components/destination/Booking";
+import Terms from "./routes/TermsRoute";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/" element={<Home />}/>
         <Route path="/about" element={<About />}/>
         <Route path="/service" element={<Service />}/>
+        <Route path="/terms" element={< Terms/>}/>
         <Route path="/contact" element={<Contact />}/>
         <Route path="/details/:title" element={<Details />} />
         <Route path="/booking/:title" element={<Booking />} />
