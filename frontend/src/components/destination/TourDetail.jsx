@@ -14,24 +14,27 @@ const TourDetail = ({ title, heading, locations, prices, imageUrl, description }
         <img src={`/image/${imageUrl}`} alt="Tour" />
       </div>
 
-      <div className="tour-details">
-        <div className="tour-info w-11/12">
-          <h2 className="text-lg font-bold">Locations to Visit:</h2>
-          <div>
-            {locations.map((location, index) => (
-              <span key={index} className="p-3">{location}</span>
-            ))}
+      <div className="tour-details mt-8">
+        <div className="flex justify-evenly">
+
+          <div className="tour-info w-11/12">
+            <h2 className="text-lg font-bold">Locations to Visit:</h2>
+            <div>
+              {locations.map((location, index) => (
+                <span key={index} className="p-3">{location}</span>
+              ))}
+            </div>
           </div>
-        </div>
 
-        <div className="tour-prices mt-5">
-          <h2>Prices:</h2>
-          <ul>
-          {Object.entries(prices).map(([vehicle, price], index) => (
-            <li key={index}>{vehicle} - {price}</li>
-          ))}
+          <div className="tour-prices">
+            <h2>Prices:</h2>
+            <ul>
+            {Object.entries(prices).map(([vehicle, price], index) => (
+              <li key={index}>{vehicle} - {price}</li>
+            ))}
 
-          </ul>
+            </ul>
+          </div>
         </div>
         <Link 
           className="bookButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"

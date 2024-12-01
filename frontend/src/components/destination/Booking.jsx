@@ -30,12 +30,12 @@ export default function Booking() {
     };
 
     return (
-        <div>
+        <div className='FLEX w-screen h-screen'>
             <form onSubmit={handleSubmit}>
                 <FormField label="Name:" type="text" value={name} onChange={setName} required />
                 <FormField label="Journey Date:" type="date" value={journeyDate} onChange={setJourneyDate} required />
                 <FormField label="Car Type:" type="select" value={carType} onChange={setcarType} options={Object.keys(prices)} required />
-                <label>Selected Price: {prices[carType]}</label>
+                <label className=' text-blue-500'>Selected Price: {prices[carType]}</label>
 
                 <FormField label="Number of Members:" type="number" value={numMembers} onChange={setNumMembers} required />
                 <FormField label="Payment By:" type="text" value={paymentBy} onChange={setPaymentBy} required />
