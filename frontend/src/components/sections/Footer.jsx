@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   const contactInfo = {
-    email: "sunrajtexiservice@gmail.com",
+    email: "sunrajtoursandtravels@gmail.com",
     phone: "9927473488, 9759224111, 9012765558",
     address: "123 Your Street, City, Country",
   };
@@ -33,7 +33,10 @@ const Footer = () => {
         </div>
         <div>
         <h4>Follow Us</h4>
-          <a href="https://www.facebook.com/yourpage" target="_blank">
+          <a href="" target="_blank">
+            <FontAwesomeIcon icon={faWhatsapp} /> Whatsapp
+          </a>
+          <a href="https://www.instagram.com/shailendra_bisht_08/" target="_blank">
             <FontAwesomeIcon icon={faInstagram}/> Instagram
           </a>
           <a href="https://www.twitter.com/yourpage" target="_blank"><FontAwesomeIcon icon={faFacebook}/>  Facebook</a>
