@@ -39,7 +39,7 @@ function Home() {
        <Hero 
        cName="hero" 
        heroImg={HomeImage}
-      title="SunRaj Tour and Travels"
+      title="SunRaj Taxi Services"
        text="EMBARK ON UNFORGETTABLE JOURNEYS" 
        buttonText="Get Started"
        url="/"

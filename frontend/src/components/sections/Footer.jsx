@@ -1,6 +1,6 @@
 import "./Footer.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faFacebook, faInstagram, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -20,7 +20,7 @@ const Footer = () => {
     <div className="footer">
       <div className="bottom">
         <div className="FLEX">
-          <h1 className="font-bold text-xl">SunRaj Tours and Travels</h1>
+          <h1 className="font-bold text-xl">SunRaj Taxi Services</h1>
           <p>Embark on unforgettable journeys.</p>
         </div>
         
@@ -39,7 +39,6 @@ const Footer = () => {
           <a href="https://www.instagram.com" target="_blank">
             <FontAwesomeIcon icon={faInstagram}/> Instagram
           </a>
-          <a href="https://www.twitter.com/yourpage" target="_blank"><FontAwesomeIcon icon={faFacebook}/>  Facebook</a>
         </div>
         <div>
           <h4>Others</h4>

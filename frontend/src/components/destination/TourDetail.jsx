@@ -6,7 +6,7 @@ const TourDetail = ({ title, heading, locations, prices, imageUrl, description }
  
   return (
     <div className="tourContainer w-screen p-5 FLEX flex-col">
-      <h1 className="text-xl font-bold">{heading}</h1>
+      <h1 className="text-xl font-bold p-5">{heading}</h1>
       <section className="m-8">
         {description}
       </section>

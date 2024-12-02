@@ -28,7 +28,7 @@ const toursData = {
   {
     "title": "himalaya",
     "description" : "Situated about 8 km from Nainital, the Himalaya Darshan viewpoint offers panoramic views of the majestic Himalayan peaks. It is one of the most popular attractions in Nainital and a perfect spot for nature lovers. The view of the snow-clad peaks, surrounded by lush green hills and valleys, provides a serene and peaceful experience.",
-    "heading": "Himalaya Darshan (2 Hours by Taxi)",
+    "heading": "Himalaya Darshan",
     "locations": [
         "Khurpatal View",
         "Bara Pathar",
@@ -48,7 +48,7 @@ const toursData = {
     {
         "title": "lake",
         "description" : "Nainital and the surrounding areas are dotted with serene lakes, each offering unique experiences. For instance, Bhimtal, Sattal, and Naukuchia Tal are all famous for their tranquil settings and opportunities for boating and nature walks. Sattal, a group of seven interconnected lakes, is perfect for a day trip, while Bhimtal offers a large lake with an island in the middle​.",
-        "heading": "Lake Tour (Half Day by Taxi)",
+        "heading": "Lake Tour",
         "locations": [
           "Pines Salfi",
           "Bhowali",
@@ -69,7 +69,7 @@ const toursData = {
       {
         "title": "mukteshwar",
         "description" : "Mukteshwar, located about 51 km from Nainital, is a peaceful hill station known for its panoramic views of the Himalayas. Attractions include the Mukteshwar Mahadev Temple, a revered spot for pilgrims, the Gorakhal Temple, and scenic tea gardens. It’s an excellent destination for those seeking solitude and natural beauty.",
-        "heading": "Mukteshwar (6-7 Hours by Taxi)",
+        "heading": "Mukteshwar",
         "locations": [
           "Pines Salfi",
           "Bhowali",
