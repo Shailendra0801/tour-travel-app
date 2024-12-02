@@ -23,9 +23,9 @@ const Navbar = () => {
           <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
 
-        <ul className={`md:flex md:items-center ${clicked ? "block" : "hidden"}`}>
+        <ul className={`md:flex md:items-center navPhone ${clicked ? "block" : "hidden"}`}>
           {MenuItems.map((item, index) => (
-            <li key={index} className="my-2 md:my-0 md:ml-4">
+            <li key={index} className="md:my-0 md:ml-1">
               <Link to={item.url} className={`text-gray-800 hover:text-blue-600 ${item.cName}`}>
                 <i className={item.icon}></i>
                 {item.title}
@@ -38,7 +38,7 @@ const Navbar = () => {
               <button className="bg-red-600 text-white py-1 px-3 rounded" onClick={SignOut}>Log Out</button>
             </div>
           ) : (
-            <Link className="bg-blue-600 text-white py-2 px-4 rounded md:ml-4" to="/signup">Sign Up</Link>
+            <Link className="bg-blue-600 text-white py-1 px-6 rounded md:ml-4" to="/signup">Sign Up</Link>
           )}
         </ul>
       </div>

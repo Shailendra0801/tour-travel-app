@@ -4,7 +4,7 @@
     align-items: center;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
     width: 75%;
-    height: 8%;
+    height: 10%;
     border-radius: 13px;
     position: fixed;
     top: 20px;
@@ -82,6 +82,7 @@ button:hover {
 
 @media screen and (max-width: 850px) {
     .NavbarItems {
+        
         z-index: 99;
     }
 
@@ -113,8 +114,8 @@ button:hover {
     .nav-links {
         display: block;
         width: 100%;
-        font-size: 1.2rem;
-        padding: 2rem 0;
+        font-size: 0.7rem;
+        padding: 0.5rem 0;
     }
 
     .nav-links:hover {
@@ -129,13 +130,13 @@ button:hover {
     .nav-links-mobile {
         display: block;
         text-align: center;
-        padding: 1.5rem;
+        padding: 0.5rem;
         margin: auto;
         border-radius: 4px;
-        width: 80%;
+        width: 65%;
         background: #01959a;
         color: #fff;
-        font-size: 1.2rem;
+        font-size: 0.8rem;
         font-weight: 700;
         letter-spacing: 2px;
         text-decoration: none;
@@ -150,6 +151,8 @@ button:hover {
         font-size: 1.2rem;
         color: #222;
     }
+
+    
 }
 
 .yooo {
@@ -157,4 +160,16 @@ button:hover {
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+
+    .navPhone {
+        margin-top: 156px;
+        background: white;
+        filter: blur(0px);
+        width: 55%;
+        height: 200px;
+        border-radius: 9%;
+    }
 }
