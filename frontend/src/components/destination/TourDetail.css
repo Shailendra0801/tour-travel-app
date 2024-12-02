@@ -7,10 +7,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     font-family: 'Roboto', sans-serif;
+    font-size: 1rem; /* Base font size */
 }
 
 .tourContainer h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Default heading size */
     font-weight: 700;
     color: #2d3748;  /* Darker color for contrast */
     text-align: center;
@@ -18,7 +19,7 @@
 }
 
 .tourContainer section {
-    font-size: 1.1rem;
+    font-size: 1.1rem; /* Default section text size */
     color: #4a5568;
     line-height: 1.7;
     text-align: justify;
@@ -44,7 +45,7 @@
 
 .tour-info h2,
 .tour-prices h2 {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Default subheading size */
     font-weight: 600;
     color: #2b6cb0;  /* Vibrant blue for headings */
     margin-bottom: 1rem;
@@ -79,6 +80,12 @@
     transition: background-color 0.3s ease;
 }
 
+.tour-details {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: space-between; /* Space out items */
+}
+
 .tour-details a {
     display: inline-block;
     margin-top: 2rem;
@@ -90,7 +97,7 @@
     border-radius: 4px;
     text-decoration: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 100%; /* Make the button full width */
 }
 
 .tour-details a:hover {
@@ -111,40 +118,243 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, transform 0.3s ease;
     font-size: 1.1rem;
-  }
-  
-  .bookButton:hover {
+    width: 100%; /* Full width button */
+}
+
+.bookButton:hover {
     background-color: #E54B3C; /* Darker coral shade on hover */
     transform: scale(1.05); /* Slight zoom effect on hover */
-  }
-  
-  .bookButton:active {
-    background-color: #D43F2A; /* Even darker shade when pressed */
+}
+
+.bookButton:active {
+    background-color: #D43F2A ; /* Even darker shade when pressed */
     transform: scale(0.98); /* Scale down effect on click */
-  }
-  
-  .bookButton:focus {
+}
+
+.bookButton:focus {
     outline: none;
     border: 2px solid #FF6F61; /* Adds focus border matching the button color */
-  }
-  
-  @media (max-width: 768px) {
-    .bookButton {
-      width: 100%;
-      padding: 1rem 0;
-    }
-  }
-  
+}
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .tour-details {
-        flex-direction: column;
+        flex-direction: column; /* Stack items vertically on small screens */
     }
 
     .tour-info,
     .tour-prices {
-        width: 100%;
-        margin-bottom: 2rem;
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 2rem; /* Space between sections */
+    }
+
+    .tourContainer h1 {
+        font-size: 2rem; /* Smaller heading on mobile */
+    }
+
+    .tourContainer section {
+        font-size: 1rem; /* Smaller text on mobile */
+    }
+
+    .bookButton {
+        padding: 1rem 0; /* Adjust padding for mobile */
+    }
+}
+
+@media (max-width: 480px) { /* Further adjustments for mobile screens */
+    .tourContainer {
+        font-size: 0.8rem; /* Further reduce base font size */
+    }
+
+    .tourContainer h1 {
+        font-size: 1.1rem; /* Further reduce heading font size */
+    }
+
+    .tourContainer section {
+        font-size: 0.9rem; /* Further reduce section text size */
+    }
+
+    .tour-info h2,
+    .tour-prices h2 {
+        font-size: 1rem; /* Reduce subheading font size */
+    }
+} ```css
+/* TourDetail Styles */
+.tourContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f1f5f8;  /* Light background for freshness */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; /* Base font size */
+}
+
+.tourContainer h1 {
+    font-size: 2.5rem; /* Default heading size */
+    font-weight: 700;
+    color: #2d3748;  /* Darker color for contrast */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.tourContainer section {
+    font-size: 1.1rem; /* Default section text size */
+    color: #4a5568;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.tourContainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tour-info,
+.tour-prices {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 40%;
+}
+
+.tour-info h2,
+.tour-prices h2 {
+    font-size: 1.2rem; /* Default subheading size */
+    font-weight: 600;
+    color: #2b6cb0;  /* Vibrant blue for headings */
+    margin-bottom: 1rem;
+}
+
+.tour-info span {
+    display: inline-block;
+    background-color: #4c51bf; /* Vibrant purple for locations */
+    color: #fff;
+    padding: 0.6rem;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tour-prices ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tour-prices li {
+    background-color: #edf2f7;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    color: #2d3748;
+    font-weight: 500;
+}
+
+.tour-prices li:hover {
+    background-color: #e2e8f0; /* Lighter hover effect */
+    transition: background-color 0.3s ease;
+}
+
+.tour-details {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: space-between; /* Space out items */
+}
+
+.tour-details a {
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: #38b2ac; /* Vibrant teal for the button */
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Make the button full width */
+}
+
+.tour-details a:hover {
+    background-color: #319795; /* Darker teal on hover */
+    transition: background-color 0.3s ease;
+}
+
+/* Book Tour Button Styles */
+.bookButton {
+    display: inline-block;
+    background-color: #FF6F61; /* Vibrant Coral for a striking color */
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.1rem;
+    width: 100%; /* Full width button */
+}
+
+.bookButton:hover {
+    background-color: #E54B3C; /* Darker coral shade on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.bookButton:active {
+    background-color: #D43F2A; /* Even darker shade when pressed */
+    transform: scale(0.98); /* Scale down effect on click */
+}
+
+.bookButton:focus {
+    outline: none;
+    border: 2px solid #FF6F61; /* Adds focus border matching the button color */
+}
+
+@media (max-width: 768px) {
+    .tour-details {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .tour-info,
+    .tour-prices {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 2rem; /* Space between sections */
+    }
+
+    .tourContainer h1 {
+        font-size: 2rem; /* Smaller heading on mobile */
+    }
+
+    .tourContainer section {
+        font-size: 1rem; /* Smaller text on mobile */
+    }
+
+    .bookButton {
+        padding: 1rem 0; /* Adjust padding for mobile */
+    }
+}
+
+@media (max-width: 480px) { /* Further adjustments for mobile screens */
+    .tourContainer {
+        font-size: 0.8rem; /* Further reduce base font size */
+    }
+
+    .tourContainer h1 {
+        font-size: 1.1rem; /* Further reduce heading font size */
+    }
+
+    .tourContainer section {
+        font-size: 0.9rem; /* Further reduce section text size */
+    }
+
+    .tour-info h2,
+    .tour-prices h2 {
+        font-size: 1rem; /* Reduce subheading font size */
     }
 }

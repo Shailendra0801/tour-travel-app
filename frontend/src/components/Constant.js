@@ -19,8 +19,8 @@ const toursData = {
     ],
     "prices": {
         "Alto": "Rs 3700/-",
-        "Eco": "Rs 3900/-",
-        "Tavera": "Rs 5300/-"
+        "Wagonar": "Rs 3900/-",
+        "Eartiga": "Rs 5300/-"
     },
     "image" : 'nainital.jpg'
     
@@ -40,8 +40,8 @@ const toursData = {
     ],
     "prices": {
         "Alto": "Rs 2800/-",
-        "Eco": "Rs 3500/-",
-        "Tavera": "Rs 4200/-"
+        "Wagonar": "Rs 3500/-",
+        "Eartiga": "Rs 4200/-"
     },
     "image" : 'nainital.jpg'
     },
@@ -61,8 +61,8 @@ const toursData = {
         ],
         "prices": {
           "Alto": "Rs 4500/-",
-          "Eco": "Rs 5000/-",
-          "Tavera": "Rs 6000/-"
+          "Wagonar": "Rs 5000/-",
+          "Eartiga": "Rs 6000/-"
         },
         "image" : 'nainital.jpg'
       },
@@ -84,8 +84,8 @@ const toursData = {
         ],
         "prices": {
           "Alto": "Rs 4500/-",
-          "Eco": "Rs 5000/-",
-          "Tavera": "Rs 7000/-"
+          "Wagonar": "Rs 5000/-",
+          "Eartiga": "Rs 7000/-"
         },
         "image" : 'nainital.jpg'
       },
@@ -107,8 +107,8 @@ const toursData = {
         ],
         "prices": {
           "Alto": "Rs 4500/-",
-          "Eco": "Rs 5000/-",
-          "Tavera": "Rs 7000/-"
+          "Wagonar": "Rs 5000/-",
+          "Eartiga": "Rs 7000/-"
         },
         "image" : 'nainital.jpg'
     }
