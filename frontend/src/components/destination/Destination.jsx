@@ -8,7 +8,7 @@ import Mountain4 from "../../assets/8.jpg";
 const Destination = () => {
   return (
     <div className="destination">
-      <h1>Popular Destinations</h1>
+      <h1 className="headingg">Popular Destinations</h1>
       <p>Tours give you the opportunity to see alot within a time frame</p>
       
       <DestinationData
