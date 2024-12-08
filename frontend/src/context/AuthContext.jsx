@@ -62,8 +62,8 @@ export function AuthContextProvider({ children }) {
     };
 
     const sendMailToCustomer = async (res) => {
-        const serviceId = "service_7h3wv8d";
-        const templateId = "template_p6xidab";
+        const serviceId = import.meta.env.VITE_EMAIL_SERVICE_ID;
+        const templateId = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
 
         try {
             // TO Sunraj Tours and Travels

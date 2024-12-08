@@ -3,6 +3,9 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const Razorpay = require("razorpay")
 
+const dotenv = require('dotenv');
+dotenv.config();
+
 const app = express();
 const port = 5000;
 
@@ -26,8 +29,8 @@ app.post('/orders', async(req, res) => {
     }
 
     const razorpay = new Razorpay({
-        key_id: "rzp_test_XDRbGjMlhXYIUT",
-        key_secret: "Xl1RQ5DTgsr3RfheakkQeAOz"
+        key_id: process.env.RAZORPAY_KEY_ID,
+        key_secret: process.env.RAZORPAY_KEY_SECRET
     })
     
     const options = {
@@ -58,8 +61,8 @@ app.get("/payment/:paymentId", async(req, res) => {
     const {paymentId} = req.params;
 
     const razorpay = new Razorpay({
-        key_id: "rzp_test_XDRbGjMlhXYIUT",
-        key_secret: "Xl1RQ5DTgsr3RfheakkQeAOz"
+        key_id: process.env.RAZORPAY_KEY_ID,
+        key_secret: process.env.RAZORPAY_KEY_SECRET
     })
     
     try {

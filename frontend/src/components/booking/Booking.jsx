@@ -98,7 +98,7 @@ export default function Booking() {
         }
 
         const options = {
-            key: "rzp_test_XDRbGjMlhXYIUT",
+            key: import.meta.env.VITE_RAZORPAY_KEY,
             amount: amount * 100,
             currency: 'INR',
             name: "Sunraj Tours and Travels",
