@@ -41,17 +41,13 @@ app.post('/orders', async(req, res) => {
         const response = await razorpay.orders.create(options)
         console.log("Order response:", response, response.status);
         
-        // if(response.status !== "created") {  
-            res.json({
-                status: 200,
-                order_id: response.id,
-                currency: response.currency,
-                amount: response.amount
-            })
+        res.json({
+            status: 200,
+            order_id: response.id,
+            currency: response.currency,
+            amount: response.amount
+        })
 
-        // } else {
-        //     res.status(500).send("Failed to create Razorpay order");    
-        // }
     } catch (error) {
         console.error("Error creating Razorpay order:", error);
         res.status(500).send("Internal server error");

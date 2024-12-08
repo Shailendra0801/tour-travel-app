@@ -1,6 +1,7 @@
 import React, { createContext, useState, useEffect } from "react";
 import { auth } from "./firebase";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged, updateProfile , sendEmailVerification} from "firebase/auth";
+import emailjs from '@emailjs/browser';
 
 export const AuthContext = createContext();
 
@@ -8,6 +9,7 @@ export function AuthContextProvider({ children }) {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
 
+    useEffect(() => emailjs.init("n-PDtk-55n-hiOJQ7"), []);
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
             if (currentUser) {
@@ -59,8 +61,38 @@ export function AuthContextProvider({ children }) {
         }
     };
 
+    const sendMailToCustomer = async (res) => {
+        const serviceId = "service_7h3wv8d";
+        const templateId = "template_p6xidab";
+
+        try {
+            // TO Sunraj Tours and Travels
+            await emailjs.send(serviceId, templateId, {
+                name : res.name,
+                orderID: "123456",  
+                date: res.date,
+                phoneNo: "1234567890",
+                paymentDone: res.paymentDone,
+            });
+            // TO Customer
+            await emailjs.send(serviceId, "template_v4q4hlv", {
+                name : res.name,
+                recipient: user.email,
+                orderID: "123456",  
+                date: res.date,
+                phoneNo: "1234567890",
+                paymentDone: res.paymentDone,
+            });
+
+        } catch (error) {
+            console.log(error);
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return (
-        <AuthContext.Provider value={{ user, SignUp, LogIn, SignOut }}>
+        <AuthContext.Provider value={{ user, SignUp, LogIn, SignOut, sendMailToCustomer }}>
             {!loading && children}
         </AuthContext.Provider>
     );
