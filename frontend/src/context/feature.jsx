@@ -11,6 +11,7 @@ export const FeatureProvider = ({ children }) => {
         try {
             const docRef = await addDoc(collection(db, 'features'), feature);
             setFeatures((prevFeatures) => [...prevFeatures, { id: docRef.id, ...feature }]);
+            return docRef;
         } catch (e) {
             console.error('Error adding document: ', e);
         }

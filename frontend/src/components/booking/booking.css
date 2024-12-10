@@ -6,7 +6,6 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     padding: 40px;
     width: 35%;
-    overflow: visible;
   }
   
   input, select {
@@ -37,7 +36,6 @@
   
   /* Additional styling for a more vibrant look */
   form {
-    overflow: visible;
     background-image: linear-gradient(to right, #f0f0f0, #fff);
   }
   
@@ -48,25 +46,4 @@
   
   button[type="submit"] {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  @media screen and (max-width: 768px) {
-    form {
-      width: 90%; /* Increase width to take up more space on smaller screens */
-      padding: 20px; /* Reduce padding for better fit */
-      
-  }
-
-  input, select {
-      padding: 10px; /* Reduce padding for smaller inputs */
-      height: 40px; /* Adjust height for smaller devices */
-  }
-
-  button[type="submit"] {
-      padding: 10px 20px; /* Adjust button padding */
-      font-size: 14px; /* Make font size smaller */
-      display: block;
-      margin: 0 auto; /* Center the button */
-      width: auto;
-  }
   }
