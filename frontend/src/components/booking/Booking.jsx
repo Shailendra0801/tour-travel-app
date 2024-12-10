@@ -16,6 +16,7 @@ export default function Booking() {
     const [journeyDate, setJourneyDate] = useState('');
     const [responseId, setResponseId] = useState();
     const [numMembers, setNumMembers] = useState('');
+    const [phone, setPhone] = useState('');
     const [name, setName] = useState('');
     const [paymentBy, setPaymentBy] = useState('');
     const [carType, setcarType] = useState(Object.keys(prices)[0]);
@@ -30,22 +31,36 @@ export default function Booking() {
     }, []);
 
     useEffect(() => {
-        setIsFormValid(journeyDate && numMembers && name && carType);
+        setIsFormValid(journeyDate && numMembers && name && carType && phone);
     }, [journeyDate, numMembers, name, carType]);
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-
+    const handleSubmit = (journeyDate, carType, numMembers, name, amount, phone, razorpay_payment_id) => {
         // Handle booking logic here
-        await bookingTour({
+        bookingTour({
             journeyDate,
             carType,
             numMembers,
             name,
-            paymentBy,
+            amount,
+            phone,
+            razorpay_payment_id
+        })
+        .then(res => {
+            console.log("res :: ", res);
+            sendMailToCustomer({
+                date: journeyDate,
+                carType,
+                numMembers,
+                name,
+                paymentDone: amount,
+                paymentId: razorpay_payment_id,
+                orderID: res.id,
+                phone
+            });
+        })
+        .catch(error => {
+            console.error("Error booking tour: ", error);
         });
-        alert('Tour booked successfully!');
-        return true;
     };
 
     const loadScript = (src) => {
@@ -109,15 +124,16 @@ export default function Booking() {
                 console.log(response);
                 setResponseId(response.razorpay_payment_id);
                 
-                sendMailToCustomer({
-                    date : journeyDate,
+                handleSubmit(
+                    journeyDate,
                     carType,
                     numMembers,
                     name,
-                    paymentDone : amount,
-                    paymentId: response.razorpay_payment_id,
-                    orderID: 1,
-                })
+                    amount,
+                    phone,
+                    response.razorpay_payment_id
+                );
+
                 navigate('/done');
             },
             prefill: {
@@ -139,6 +155,7 @@ export default function Booking() {
                 <FormField label="Name:" type="text" value={name} onChange={setName} required />
                 <FormField label="Journey Date:" type="date" value={journeyDate} onChange={setJourneyDate} required />
                 <FormField label="Number of Members:" type="number" value={numMembers} onChange={setNumMembers} required />
+                <FormField label="Enter contact No. " type="tel" value={phone} onChange={setPhone} required />
 
                 <FormField label="Car Type:" type="select" value={carType} onChange={setcarType} options={Object.keys(prices)} required />
                 <label className=' text-blue-700 text-xl mb-4'>Selected Price: {prices[carType]}</label>

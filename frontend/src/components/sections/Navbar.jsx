@@ -4,6 +4,9 @@ import { MenuItems } from "../MenuItems";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import logo from "./logo-pngg.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons'
+
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
@@ -35,7 +38,15 @@ const Navbar = () => {
           {user && user.displayName ? (
             <div className="flex items-center">
               <span className="mr-4">{user.displayName}</span>
-              <button className="bg-red-600 text-white py-1 px-3 rounded" onClick={SignOut}>Log Out</button>
+              <button 
+                className="bg-red-500 text-white p-1 px-2 rounded relative group" 
+                onClick={SignOut}
+              > 
+                <FontAwesomeIcon icon={faRightFromBracket} />
+                <span className="absolute bottom-full mb-2 hidden group-hover:block bg-gray-800 text-white text-xs rounded py-1 px-2">
+                  Logout
+                </span>
+              </button>
             </div>
           ) : (
             <Link className="bg-blue-600 text-white py-1 px-6 rounded md:ml-4" to="/signup">Sign Up</Link>
