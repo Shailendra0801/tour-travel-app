@@ -32,12 +32,12 @@ export default function Booking() {
 
     useEffect(() => {
         setIsFormValid(journeyDate && numMembers && name && carType && phone);
-    }, [journeyDate, numMembers, name, carType]);
+    }, [journeyDate, numMembers, name, carType, phone]);
 
     const handleSubmit = (journeyDate, carType, numMembers, name, amount, phone, razorpay_payment_id) => {
         // Handle booking logic here
         bookingTour({
-            journeyDate,
+            data : journeyDate,
             carType,
             numMembers,
             name,
@@ -46,7 +46,6 @@ export default function Booking() {
             razorpay_payment_id
         })
         .then(res => {
-            console.log("res :: ", res);
             sendMailToCustomer({
                 date: journeyDate,
                 carType,
@@ -121,7 +120,6 @@ export default function Booking() {
             image: "https://kydeedknficgzzfvfiiy.supabase.co/storage/v1/object/public/CODEBLOCK/public/logo.jpeg",
             
             handler: function (response) {
-                console.log(response);
                 setResponseId(response.razorpay_payment_id);
                 
                 handleSubmit(

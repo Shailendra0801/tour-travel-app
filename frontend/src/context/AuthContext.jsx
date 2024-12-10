@@ -63,25 +63,32 @@ export function AuthContextProvider({ children }) {
 
     const sendMailToCustomer = async (res) => {
         const serviceId = import.meta.env.VITE_EMAIL_SERVICE_ID;
-        const templateId = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+        const templateCustomer = import.meta.env.VITE_EMAIL_TEMPLATE_ID_CUSTOMER;
+        const templateSunRaj = import.meta.env.VITE_EMAIL_TEMPLATE_ID_SUNRAJ;
 
         try {
             // TO Sunraj Tours and Travels
-            await emailjs.send(serviceId, templateId, {
-                name : res.name,
-                orderID: "123456",  
+            await emailjs.send(serviceId, templateSunRaj, {
                 date: res.date,
-                phoneNo: "1234567890",
+                carType: res.carType,
+                numMembers: res.numMembers,
+                name : res.name,
                 paymentDone: res.paymentDone,
+                paymentId: res.paymentId,
+                orderID: res.orderID,  
+                phoneNo: res.phone,
             });
             // TO Customer
-            await emailjs.send(serviceId, "template_v4q4hlv", {
-                name : res.name,
+            await emailjs.send(serviceId, templateCustomer, {
                 recipient: user.email,
-                orderID: "123456",  
                 date: res.date,
-                phoneNo: "1234567890",
+                carType: res.carType,
+                numMembers: res.numMembers,
+                name : res.name,
                 paymentDone: res.paymentDone,
+                paymentId: res.paymentId,
+                orderID: res.orderID,  
+                phoneNo: res.phone,
             });
 
         } catch (error) {

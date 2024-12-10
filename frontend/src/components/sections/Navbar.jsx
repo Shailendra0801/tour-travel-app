@@ -11,7 +11,6 @@ import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons'
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
   const { user, SignOut } = useContext(AuthContext);
-  console.log(user);
 
   const handleClick = () => {
     setClicked(!clicked);
