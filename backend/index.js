@@ -11,7 +11,14 @@ const port = 5000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors());
+app.use(
+    cors({
+      origin: `${process.env.FRONTEND_URL}`, 
+      methods: ["GET", "POST", "PUT", "DELETE"],
+      credentials: true,
+      optionSuccessStatus:200
+    })
+  );
 
 app.get('/', (req, res) => {
     console.log("Hello World!");
