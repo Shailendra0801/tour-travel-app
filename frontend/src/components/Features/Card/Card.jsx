@@ -1,7 +1,7 @@
 import './Styles/Card.css'; 
 
 const Card = ({ icon, title, description }) => {
-  console.log(icon);
+
   return (
     <div className="card">
     
