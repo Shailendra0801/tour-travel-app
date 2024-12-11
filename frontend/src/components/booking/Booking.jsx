@@ -84,7 +84,7 @@ export default function Booking() {
         setPaymentBy(amountInDigits);   
 
         try {
-            const response = await axios.post("http://localhost:5000/orders", {
+            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}`/orders, {
                 amount: amountInDigits * 100,
                 currency: "INR"
             }, {
