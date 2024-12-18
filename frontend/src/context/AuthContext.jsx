@@ -9,7 +9,7 @@ export function AuthContextProvider({ children }) {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    useEffect(() => emailjs.init("n-PDtk-55n-hiOJQ7"), []);
+    useEffect(() => emailjs.init("nNIBsASVpGG1M8D8B"), []);
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
             if (currentUser) {
@@ -60,11 +60,16 @@ export function AuthContextProvider({ children }) {
             return error.message;
         }
     };
+    // const serviceId = import.meta.env.VITE_EMAIL_SERVICE_ID;
+    // const templateCustomer = import.meta.env.VITE_EMAIL_TEMPLATE_ID_CUSTOMER;
+    // const templateSunRaj = import.meta.env.VITE_EMAIL_TEMPLATE_ID_SUNRAJ;
+    // console.log(serviceId, templateCustomer, templateSunRaj);
 
     const sendMailToCustomer = async (res) => {
         const serviceId = import.meta.env.VITE_EMAIL_SERVICE_ID;
         const templateCustomer = import.meta.env.VITE_EMAIL_TEMPLATE_ID_CUSTOMER;
         const templateSunRaj = import.meta.env.VITE_EMAIL_TEMPLATE_ID_SUNRAJ;
+        console.log(serviceId, templateCustomer, templateSunRaj);
 
         try {
             // TO Sunraj Tours and Travels
