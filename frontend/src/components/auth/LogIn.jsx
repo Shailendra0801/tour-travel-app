@@ -56,6 +56,7 @@ const LogIn = () => {
                     type="submit"
                     className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition-colors"
                 >
+                    Log In
                 </button>
 
                 <h1 className="mt-4">Already have account, <Link to="/signup" className="text-blue-500 hover:underline">Sign Up</Link></h1>
