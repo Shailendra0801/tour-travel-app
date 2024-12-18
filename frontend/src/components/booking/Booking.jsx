@@ -163,7 +163,7 @@ export default function Booking() {
                     <span> I agree to the <Link to="/terms" className='text-blue-600'>privacy policy</Link></span>
                 </div>
 
-                <button type="button" onClick={() => createRazorpayOrder(prices[carType])} className='mb-4' disabled={!isFormValid || !isChecked}>Payment</button>
+                <button type="button" onClick={() => createRazorpayOrder(prices[carType])} className='mb-4' disabled={!isFormValid || !isChecked}>Pay</button>
 
             </form>
         </div>
