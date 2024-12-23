@@ -11,7 +11,7 @@ import LogIn from "./components/auth/LogIn";
 import Booking from "./components/booking/Booking";
 import Terms from "./routes/TermsRoute";
 import Done from "./components/booking/Done";
-import PrivacyRoutes from "./routes/PrivacyRoute";
+import Privacy from "./routes/PrivacyRoute";
 
 export default function App() {
   return (
@@ -27,7 +27,7 @@ export default function App() {
         <Route path="/signup" element={<SignUp />}/>
         <Route path="/login" element={<LogIn />}/>
         <Route path="/done" element={<Done />}/>
-        <Route path="/privacy" element={<PrivacyRoutes />}/>
+        <Route path="/privacy" element={<Privacy />}/>
       </Routes>
     </div>
   );

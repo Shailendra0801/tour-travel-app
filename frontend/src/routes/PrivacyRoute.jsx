@@ -1,6 +1,6 @@
 import Navbar from "../components/sections/Navbar";
 import Footer from "../components/sections/Footer";
-import Privacy from "../components/terms/privacy.jsx";
+import Privacy from "../components/terms/privacy";
 function PrivacyRoutes() {
   return (
     <>
