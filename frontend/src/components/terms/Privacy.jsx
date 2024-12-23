@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Privacy() {
+function Privacy() {
   return (
     <div className='FLEX flex-col mb-20'>
         <div className="text-4xl h-48 flex items-end justify-center mb-10 underline">
@@ -104,3 +104,5 @@ export default function Privacy() {
     </div>
 )
 }
+
+export default Privacy;
