@@ -50,7 +50,7 @@ export default function Terms() {
                 </ol>
             </div>
             <div>
-                <h1 className='text-xl font-bold'>7. Health and Safety</h1>
+                <h1 className='text-xl font-bold'>6. Health and Safety</h1>
                 <ol style={{listStyleType: "upper-alpha" }} className='list-inside'>
                     <li> Customers are advised to assess their health and fitness level before booking any tour.</li>
                     <li>In case of any pre-existing health conditions, customers should inform us at the time of booking so that we can assist in determining whether the tour is suitable.</li>
@@ -58,7 +58,7 @@ export default function Terms() {
                 </ol>
             </div>
             <div>
-                <h1 className='text-xl font-bold'>8. Limitation of Liability</h1>
+                <h1 className='text-xl font-bold'>7. Limitation of Liability</h1>
                 <ol style={{listStyleType: "upper-alpha" }} className='list-inside'>
                     <li> Our liability is limited to the amount paid by the customer for the tour package. We are not liable for any indirect or consequential damages, including loss of enjoyment, emotional distress, or financial loss.</li>
                     <li>We are not responsible for any third-party services provided during the tour.</li>
@@ -66,14 +66,14 @@ export default function Terms() {
             </div>
 
             <div>
-                <h1 className='text-xl font-bold'>9. Force Majeure</h1>
+                <h1 className='text-xl font-bold'>8. Force Majeure</h1>
                 <ol style={{listStyleType: "upper-alpha" }} className='list-inside'>
                     <li> We will not be held liable for failure to provide services or delays caused by events outside our control, including but not limited to natural disasters, pandemics, political instability, strikes, or any other unforeseen circumstances.</li>
                 </ol>
             </div>
 
             <div>
-                <h1 className='text-xl font-bold'>10. Governing Law</h1>
+                <h1 className='text-xl font-bold'>9. Governing Law</h1>
                 <ol style={{listStyleType: "upper-alpha" }} className='list-inside'>
                     <li> These Terms and Conditions shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law principles</li>
                     <li> Any disputes arising out of or in connection with these Terms and Conditions shall be resolved through arbitration/mediation  in Nainital.</li>
@@ -81,7 +81,7 @@ export default function Terms() {
             </div>
 
             <div>
-                <h1 className='text-xl font-bold'>11. Amendments to Terms and Condition</h1>
+                <h1 className='text-xl font-bold'>10. Amendments to Terms and Condition</h1>
                 <ol style={{listStyleType: "upper-alpha" }} className='list-inside'>
                     <li>We reserve the right to modify or update these Terms and Conditions at any time. All changes will be posted on our website, and the updated version will apply to all bookings made after the date of posting .</li>
                 </ol>

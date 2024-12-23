@@ -7,14 +7,8 @@ const Footer = () => {
   const contactInfo = {
     email: "sunrajtoursandtravels@gmail.com",
     phone: "9927473488, 9759224111, 9012765558",
-    address: "123 Your Street, City, Country",
+    address: "Bangali Colony, Sukhatal, Nainital Pin-263002",
   };
-
-
-  const otherLinks = [
-    { href: "/", text: "Terms of Services" },
-    { href: "/", text: "Privacy Policy" },
-  ];
 
   return (
     <div className="footer">
@@ -22,6 +16,8 @@ const Footer = () => {
         <div className="FLEX">
           <h1 className="font-bold text-xl">SunRaj Taxi Services</h1>
           <p>Embark on unforgettable journeys.</p>
+          <h4>Address</h4>
+          <p>{contactInfo.address}</p>
         </div>
         
         <div>
@@ -43,6 +39,7 @@ const Footer = () => {
         <div>
           <h4>Others</h4>
           <Link to='/terms'>Terms and Conditions</Link>
+          <Link to='/privacy'>Privacy Policy</Link>
         </div>
       </div>
     </div>

@@ -72,3 +72,9 @@ input[type="password"]:focus {
 .register-link a:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 850px){
+    .loginBtn{
+        display: block;
+    }
+}

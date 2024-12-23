@@ -91,3 +91,9 @@ button:hover {
 .sign-in-prompt a:hover {
     text-decoration: underline; /* Underline on hover */
 }
+
+@media screen and (max-width: 850px){
+    .signupBtn{
+        display: block;
+    }
+}
