@@ -48,7 +48,7 @@ const Navbar = () => {
               </button>
             </div>
           ) : (
-            <Link className="bg-blue-600 text-white py-1 px-6 rounded md:ml-4" to="/signup">Sign Up</Link>
+            <Link className="bg-blue-600 text-white py-1 px-6 rounded md:ml-4" to="/login">Log In</Link>
           )}
         </ul>
       </div>

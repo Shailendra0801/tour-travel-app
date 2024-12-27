@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams, useLocation } from 'react-router-dom';
 import getTourDetails from '../Constant';
 import { FeatureContext } from '../../context/feature';
 import { AuthContext } from '../../context/AuthContext';
@@ -23,12 +23,18 @@ export default function Booking() {
     const [isFormValid, setIsFormValid] = useState(false);
     const [isChecked, setIsChecked] = useState(false);
 
+    
+
     useEffect(() => {
         if (!user) {
-            alert("Please login to book a tour");
+            // alert("Please login to book a tour");
             navigate('/login');
+            // const url = '/login'; // Replace with your desired path or full URL
+            // window.open(window.location.origin + url, '_blank');
         }
     }, []);
+
+    const location = useLocation();
 
     useEffect(() => {
         setIsFormValid(journeyDate && numMembers && name && carType && phone);
