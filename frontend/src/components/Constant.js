@@ -18,9 +18,9 @@ const toursData = {
         "Mansa Devi Temple"
     ],
     "prices": {
-        "Alto": "Rs 3700/-",
-        "Wagonar": "Rs 3900/-",
-        "Eartiga": "Rs 5300/-"
+        "Alto": "INR 3700/-",
+        "Wagonar": "INR 3900/-",
+        "Eartiga": "INR 5300/-"
     },
     "image" : 'nainital.jpg'
     
@@ -39,9 +39,9 @@ const toursData = {
         "Himalaya Darshan"
     ],
     "prices": {
-        "Alto": "Rs 2800/-",
-        "Wagonar": "Rs 3500/-",
-        "Eartiga": "Rs 4200/-"
+        "Alto": "INR 2800/-",
+        "Wagonar": "INR 3500/-",
+        "Eartiga": "INR 4200/-"
     },
     "image" : 'nainital.jpg'
     },
@@ -60,9 +60,9 @@ const toursData = {
           "Hanumangarh"
         ],
         "prices": {
-          "Alto": "Rs 4500/-",
-          "Wagonar": "Rs 5000/-",
-          "Eartiga": "Rs 6000/-"
+          "Alto": "INR 4500/-",
+          "Wagonar": "INR 5000/-",
+          "Eartiga": "INR 6000/-"
         },
         "image" : 'nainital.jpg'
       },
@@ -83,9 +83,9 @@ const toursData = {
           "Himalaya View"
         ],
         "prices": {
-          "Alto": "Rs 4500/-",
-          "Wagonar": "Rs 5000/-",
-          "Eartiga": "Rs 7000/-"
+          "Alto": "INR 4500/-",
+          "Wagonar": "INR 5000/-",
+          "Eartiga": "INR 7000/-"
         },
         "image" : 'nainital.jpg'
       },
@@ -106,9 +106,9 @@ const toursData = {
           "Shawal Factory"
         ],
         "prices": {
-          "Alto": "Rs 4500/-",
-          "Wagonar": "Rs 5000/-",
-          "Eartiga": "Rs 7000/-"
+          "Alto": "INR 4500/-",
+          "Wagonar": "INR 5000/-",
+          "Eartiga": "INR 7000/-"
         },
         "image" : 'nainital.jpg'
     }

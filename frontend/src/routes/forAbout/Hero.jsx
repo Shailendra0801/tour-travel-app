@@ -30,7 +30,7 @@ function Hero() {
           and enjoy the beauty and culture of each destination with SunRaj Taxi Services."
           <br />
           <br />
-          <span className="font-extrabold text-3xl">-Mr. Nishant Kumar Balmiki</span>
+          <span className="font-extrabold text-3xl">-Mr. Nishant Balmiki</span>
           </p>
       </div>
       <div className="image-container FLEX">
