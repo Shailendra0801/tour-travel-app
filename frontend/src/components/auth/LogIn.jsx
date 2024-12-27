@@ -62,7 +62,7 @@ const LogIn = () => {
                         Log In
                     </button>
 
-                    <h1 className="mt-4">Already have account, <Link to="/signup" className="text-blue-500 hover:underline">Sign Up</Link></h1>
+                    <h1 className="mt-4">New User? <Link to="/signup" className="text-blue-500 hover:underline">Sign Up</Link></h1>
                 </form>
             </div>
         </>

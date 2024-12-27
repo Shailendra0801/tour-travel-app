@@ -122,7 +122,7 @@ const SignUp = () => {
                         {loading ? "Signing up..." : "Sign Up"}
                     </button>
 
-                    <h1 className="mt-4">Already have account, <Link to="/login" className="text-blue-500 hover:underline">Login</Link></h1>
+                    <h1 className="mt-4">Already have account? <Link to="/login" className="text-blue-500 hover:underline">Login</Link></h1>
                 </form>
             </div>
         </>
