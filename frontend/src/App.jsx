@@ -11,7 +11,7 @@ import LogIn from "./components/auth/LogIn";
 import Booking from "./components/booking/Booking";
 import Terms from "./routes/TermsRoute";
 import Done from "./components/booking/Done";
-import Privacy from "./routes/PrivacyRoute";
+import Privacy from "./routes/PrivacyRoute.jsx";
 
 export default function App() {
   return (
