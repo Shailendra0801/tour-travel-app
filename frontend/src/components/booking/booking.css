@@ -1,49 +1,65 @@
 /* General styles */
 
+form {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 35%;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 48px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #0062cc;
+  transform: translateY(-2px);
+}
+
+/* Additional styling for a more vibrant look */
+form {
+  background-image: linear-gradient(to right, #f0f0f0, #fff);
+}
+
+input, select {
+  border-color: #ddd;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+button[type="submit"] {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
   form {
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    width: 35%;
+    width: 90%; /* Make the form take up more width on mobile */
+    padding: 20px; /* Reduce padding for mobile */
   }
-  
+
+  .paymentButton{
+    display: block;
+  }
+
   input, select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: 48px;
+    height: 40px; /* Adjust input height for mobile */
   }
-  
-  button[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 15px 30px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #0062cc;
-    transform: translateY(-2px);
-  }
-  
-  /* Additional styling for a more vibrant look */
-  form {
-    background-image: linear-gradient(to right, #f0f0f0, #fff);
-  }
-  
-  input, select {
-    border-color: #ddd;
-    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.05);
-  }
-  
-  button[type="submit"] {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  }
+}
