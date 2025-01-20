@@ -4,7 +4,7 @@ import { MenuItems } from "../MenuItems";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import logo from "./logo-pngg.png";
-import logoo from "./hero.jpeg";
+import logoo from "./Hero.jpeg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 
