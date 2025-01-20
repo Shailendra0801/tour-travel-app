@@ -1,3 +1,4 @@
+/* Navbar.css */
 .NavbarItems {
     display: flex;
     justify-content: center;
@@ -80,51 +81,80 @@ button:hover {
     display: none;
 }
 
+.yooo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Sidebar Styles for Mobile */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Hide sidebar by default */
+    width: 250px;
+    height: 120vh;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+    border: 3px solid #01959a;
+}
+
+.sidebar.open {
+    left: -20%; /* Show sidebar when open */
+}
+
+.sidebar ul {
+    padding: 20px 20px 30px 20px;
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.sidebar ul li a:hover {
+    background: #01959a;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.sdbImg {
+    width: 100vh;
+    height: 25%;
+    object-fit: cover;
+}
+
+/* Mobile View Adjustments */
 @media screen and (max-width: 850px) {
     .NavbarItems {
-        
         z-index: 99;
     }
 
     .nav-menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        background: #fff;
-        width: 100%;
-        height: auto;
-        position: absolute;
-        top: 0;
-        left: -100%;
-        opacity: 0;
-        align-items: stretch;
-        padding: 80px 0 30px 0;
-        margin: 0;
-        transition: 0.3s ease-in-out;
-        border-radius: 13px;
-    }
-    
-    .nav-menu.active {
-        left: 0;
-        opacity: 1;
-        z-index: 999; /* Changed to ensure visibility */
-        transition: 0.3s ease-in-out;
+        display: none; /* Hide desktop menu in mobile view */
     }
 
-    .nav-links {
+    .menu-icons {
         display: block;
-        width: 100%;
-        font-size: 0.7rem;
-        padding: 0.5rem 0;
+        cursor: pointer;
     }
 
-    .nav-links:hover {
-        background: #01959a;
-        transition: none;
-    }
-
-    button {
-        display: none;  
+    .menu-icons i {
+        font-size: 1.2rem;
+        color: #222;
     }
 
     .nav-links-mobile {
@@ -142,34 +172,18 @@ button:hover {
         text-decoration: none;
     }
 
-    .menu-icons {
-        display: block;
-        cursor: pointer;
+    button {
+        display: block;  
     }
-
-    .menu-icons i {
-        font-size: 1.2rem;
-        color: #222;
-    }
-
-    
-}
-
-.yooo {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
 }
 
 @media (max-width: 768px) {
-
     .navPhone {
-        margin-top: 156px;
+        margin-top: 0;
         background: white;
         filter: blur(0px);
-        width: 55%;
-        height: 200px;
-        border-radius: 9%;
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
     }
 }
