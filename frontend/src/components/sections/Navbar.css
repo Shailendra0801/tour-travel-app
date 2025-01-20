@@ -92,7 +92,7 @@ button:hover {
 .sidebar {
     position: fixed;
     top: 0;
-    left: -100%; /* Hide sidebar by default */
+    left: -175%; /* Hide sidebar by default */
     width: 250px;
     height: 120vh;
     background-color: white;
@@ -132,8 +132,8 @@ button:hover {
 }
 
 .sdbImg {
-    width: 100vh;
-    height: 25%;
+    width: 30vh;
+    height: 11%;
     object-fit: cover;
 }
 

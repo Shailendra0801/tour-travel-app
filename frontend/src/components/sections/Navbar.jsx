@@ -4,7 +4,7 @@ import { MenuItems } from "../MenuItems";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import logo from "./logo-pngg.png";
-import logoo from "./Hero.jpeg";
+import logoo from "./Hero.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 
@@ -28,7 +28,7 @@ const Navbar = () => {
 
         {/* Sidebar for Mobile */}
         <div className={`sidebar ${clicked ? "open" : ""}`}>
-          <img src={logoo} alt="Logo" className="sdbImg size-20" />
+          <img src={logoo} alt="Logo" className="sdbImg size-10" />
           <ul className="navPhone">
             {MenuItems.map((item, index) => (
               <li key={index} className="my-4" style={{ display: "flex", justifyContent: "flex-start" }}>
