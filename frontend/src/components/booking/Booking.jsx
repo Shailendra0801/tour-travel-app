@@ -27,10 +27,7 @@ export default function Booking() {
 
     useEffect(() => {
         if (!user) {
-            // alert("Please login to book a tour");
             navigate('/login');
-            // const url = '/login'; // Replace with your desired path or full URL
-            // window.open(window.location.origin + url, '_blank');
         }
     }, []);
 

@@ -10,8 +10,9 @@ export const FeatureProvider = ({ children }) => {
     const bookingTour = async (feature) => {
         try {
             const docRef = await addDoc(collection(db, 'features'), feature);
-            setFeatures((prevFeatures) => [...prevFeatures, { id: docRef.id, ...feature }]);
-            return docRef;
+            const newFeature = { id: docRef.id, ...feature };
+            setFeatures((prevFeatures) => [...prevFeatures, newFeature]);
+            return newFeature;
         } catch (e) {
             console.error('Error adding document: ', e);
         }

@@ -3,12 +3,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyALYeAjq9NYYrjWa106cf7n2xCP6xGNSS0",
-  authDomain: "tourstravels-495be.firebaseapp.com",
-  projectId: "tourstravels-495be",
-  storageBucket: "tourstravels-495be.firebasestorage.app",
-  messagingSenderId: "764145143612",
-  appId: "1:764145143612:web:3d34ed0600c3f86e559839"
+  apiKey: "AIzaSyA0QBj1DLnGOfswPvNgtWy1qgZBFFnOjjQ",
+  authDomain: "sunraj-taxi-services.firebaseapp.com",
+  projectId: "sunraj-taxi-services",
+  storageBucket: "sunraj-taxi-services.firebasestorage.app",
+  messagingSenderId: "224056552819",
+  appId: "1:224056552819:web:8976e3309f6dbc7b84a906"
 };
 
 // Initialize Firebase

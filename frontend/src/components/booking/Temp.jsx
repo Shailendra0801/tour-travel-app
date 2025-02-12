@@ -11,13 +11,14 @@ export default function Temp() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const serviceId = "service_7h3wv8d";
-        const templateId = "template_p6xidab";
+        const serviceId = "service_bvi676b";
+        const templateIdSunraj = "template_jx0opyl";
+        const templateIdClient = "template_pqlta56";
 
         try {
             setLoading(true);
             // TO Sunraj Tours and Travels
-            await emailjs.send(serviceId, templateId, {
+            await emailjs.send(serviceId, templateIdSunraj, {
                 name,
                 orderID: "123456",  
                 date: "2021-09-01",
@@ -25,7 +26,7 @@ export default function Temp() {
                 paymentDone: "4000",
             });
             // TO Customer
-            await emailjs.send(serviceId, "template_v4q4hlv", {
+            await emailjs.send(serviceId, templateIdClient, {
                 name,
                 recipient: email,
                 orderID: "123456",  
