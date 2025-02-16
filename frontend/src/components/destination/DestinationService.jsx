@@ -1,9 +1,9 @@
 import DestinationData from "./DestinationData";
 import "./Destination.css";
-import Mountain1 from "../../assets/5.jpg";
-import Mountain2 from "../../assets/8.jpg";
-import Mountain3 from "../../assets/5.jpg";
-import Mountain4 from "../../assets/8.jpg";
+import Mountain1 from "../../assets/Nainital1.jpg";
+import Mountain2 from "../../assets/Nainital2.jpg";
+import Mountain3 from "../../assets/Ranikhet1.jpg";
+import Mountain4 from "../../assets/Ranikhet2.jpg";
 
 const DestinationService = () => {
   return (

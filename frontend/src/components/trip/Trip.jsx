@@ -2,7 +2,7 @@ import "./Trip.css";
 import TripData from "./TripData";
 import Trip1 from "../../assets/5.jpg";
 import Trip2 from "../../assets/8.jpg";
-import Trip3 from "../../assets/6.jpg";
+import Trip3 from "../../assets/ecoCave.jpg";
 
 function Trip() {
   return (
@@ -30,10 +30,8 @@ function Trip() {
 
         <TripData
           image={Trip3}
-          heading="AC Cave"
-          text="France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches. 
-          Paris, its fashion houses, classical art museums including the Louvre and monuments like the 
-          Eiffel Tower."
+          heading="ECO Cave Gardens"
+          text="Eco Cave Gardens is a popular tourist attraction in Nainital, Uttarakhand. It is a network of interconnected caves that resemble the natural habitats of different wild animals. The place is well-known for its adventurous cave exploration, hanging gardens, and musical fountain (seasonal)."
            />
       </div>
     </div>

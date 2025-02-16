@@ -118,8 +118,8 @@ export default function Booking() {
             key: import.meta.env.VITE_RAZORPAY_KEY,
             amount: amount * 100,
             currency: 'INR',
-            name: "Sunraj Tours and Travels",
-            description: "Payment to Sunraj tours and travels",
+            name: "Sunraj Taxi Services",
+            description: "Payment to Sunraj Taxi Services",
             image: "https://kydeedknficgzzfvfiiy.supabase.co/storage/v1/object/public/CODEBLOCK/public/logo.jpeg",
             
             handler: function (response) {
@@ -138,7 +138,7 @@ export default function Booking() {
                 navigate('/done');
             },
             prefill: {
-                name: "Sunraj tours and travels",
+                name: "Sunraj Taxi Services",
                 email: "sunrajtoursandtravels@gmail.com"
             },
             theme: {
@@ -160,11 +160,11 @@ export default function Booking() {
                 <FormField label="Enter contact No. " type="tel" value={phone} onChange={setPhone} required />
 
                 <FormField label="Car Type:" type="select" value={carType} onChange={setcarType} options={Object.keys(prices)} required />
-                <label className=' text-blue-700 text-xl mb-4'>Selected Price: {prices[carType]}</label>
-
+                <label className=' text-blue-700 text-xl mb-4'>Selected Price: {parseFloat(prices[carType].replace(/[^0-9.]/g, '')) / 4}</label>
+                <p>(You only need to pay 25% while booking, rest after ride. For more information contact 9012765558)</p>
                 <div className='FLEX mb-4'>
                     <input type="checkbox" required className='size-5 mb-0 mr-3' checked={isChecked} onChange={(e) => setIsChecked(e.target.checked)} />
-                    <span> I agree to the <Link to="/terms" className='text-blue-600'>privacy policy</Link></span>
+                    <span> I agree to the <Link to="/privacy" className='text-blue-600'>privacy policy</Link></span>
                 </div>
 
                 <button type="button" onClick={() => createRazorpayOrder(prices[carType])} className='paymentButton mb-4' disabled={!isFormValid || !isChecked}>Pay</button>

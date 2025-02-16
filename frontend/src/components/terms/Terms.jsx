@@ -15,7 +15,7 @@ export default function Terms() {
                 <h1 className='text-xl font-bold'>1.Booking and Reservations</h1>
                 <ol style={{listStyleType: "upper-alpha" }} className='list-inside' > 
                     <li> All bookings must be made through our website, over the phone, or in person at our office.</li>
-                    <li>The booking will be confirmed only once 50% payment is received and processed.</li>
+                    <li>The booking will be confirmed only once 25% payment is received and processed.</li>
                     <li>Prices are subject to change without prior notice. However, once the booking is confirmed, the price will remain fixed.</li>
                 </ol>
             </div>

@@ -32,7 +32,7 @@ const Footer = () => {
           <a href="https://wa.me/9012765558" target="_blank">
             <FontAwesomeIcon icon={faWhatsapp} /> Whatsapp
           </a>
-          <a href="https://www.instagram.com" target="_blank">
+          <a href="https://www.instagram.com/sunrajtexiservice" target="_blank">
             <FontAwesomeIcon icon={faInstagram}/> Instagram
           </a>
         </div>
