@@ -160,6 +160,7 @@ export default function Booking() {
                 <FormField label="Enter contact No. " type="tel" value={phone} onChange={setPhone} required />
 
                 <FormField label="Car Type:" type="select" value={carType} onChange={setcarType} options={Object.keys(prices)} required />
+                {/* Redeploy */}
                 <label className=' text-blue-700 text-xl mb-4'>Selected Price: {parseFloat(prices[carType].replace(/[^0-9.]/g, '')) / 4}</label>
                 <p>(You only need to pay 25% while booking, rest after ride. For more information contact 9012765558)</p>
                 <div className='FLEX mb-4'>
