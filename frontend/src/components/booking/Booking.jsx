@@ -167,8 +167,7 @@ export default function Booking() {
                     <span> I agree to the <Link to="/privacy" className='text-blue-600'>privacy policy</Link></span>
                 </div>
 
-                <button type="button" onClick={() => createRazorpayOrder(prices[carType])} className='paymentButton mb-4' disabled={!isFormValid || !isChecked}>Pay</button>
-
+                <button type="button" onClick={() => createRazorpayOrder((parseFloat(prices[carType].replace(/[^0-9.]/g, '')) / 4).toString())} className='paymentButton mb-4' disabled={!isFormValid || !isChecked}>Pay</button>
             </form>
         </div>
     );
